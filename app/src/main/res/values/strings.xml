@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartLearningManager</string>
+    <string name="uid">User ID</string>
+    <string name="pwd">Password</string>
+    <string name="login">Login</string>
+    <string name="menu_add">Add Todo</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="todoTopic"></string>
+</resources>
