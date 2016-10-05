@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Noti"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton13"
+                        android:src="@drawable/notib"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        android:id="@+id/textView6"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000000"
+                        android:textSize="23dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Clear All"
+                        android:id="@+id/clear"
+                        android:background="#f6ee00"
+                        android:layout_marginLeft="7dp"
+                        android:onClick="ClearNotification"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView3" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cecece"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:weightSum="1">
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

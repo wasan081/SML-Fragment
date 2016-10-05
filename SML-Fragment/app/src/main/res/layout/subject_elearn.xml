@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.a747.smartlearningmanager.Subject_elearn">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#091534"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_height="50dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton29"
+                android:src="@drawable/backb"
+                android:layout_gravity="center_horizontal"
+                android:background="#091534"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:onClick="gotoElean" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton30"
+                    android:src="@drawable/videob"
+                    android:layout_gravity="center"
+                    android:background="#091534"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="SubjectName"
+                    android:id="@+id/subjname"
+                    android:textColor="#ffffff"
+                    android:paddingTop="5dp"
+                    android:textSize="18dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageButton30"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="152dp"
+            android:background="#d0deff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gust"
+                android:id="@+id/lecturerImage" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/lecturerImage"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/linearLayout5" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text=""
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/subjCode" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout5"
+                    android:id="@+id/linearLayout6" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Lecturer :"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/lecturer"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text=""
+                        android:id="@+id/lecturerName" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout9"
+                    android:layout_below="@+id/linearLayout6"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Room : "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text=""
+                        android:id="@+id/class_room"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout10"
+                    android:layout_below="@+id/linearLayout9"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Time : "
+                        android:id="@+id/textView15"
+                        android:layout_below="@+id/linearLayout9"
+                        android:layout_alignParentStart="true"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text=""
+                        android:id="@+id/class_Time"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mail"
+                android:id="@+id/imgB_mail"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/call"
+                android:id="@+id/imgB_call"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/imgB_mail" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#ff1619"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Absent"
+                android:textColor="#ffffff"
+                android:id="@+id/textView11" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="#ff1619"
+                android:id="@+id/absent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="#e7e7e7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Semester 1/2559"
+                    android:id="@+id/title_semester"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageButton35"
+                    android:src="@drawable/nextb"
+                    android:layout_gravity="center_horizontal"
+                    style="@android:style/Widget.DeviceDefault.Light.ActionButton"
+                    android:layout_alignBottom="@+id/title_semester"
+                    android:layout_toEndOf="@+id/title_semester"
+                    android:onClick="getPastSubjectVideo" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:onClick="Help"
+                    android:id="@+id/help"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@android:drawable/ic_menu_help"
+                    style="@android:style/Widget.DeviceDefault.Light.ActionButton"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView9"
+            android:layout_gravity="center_horizontal"
+            android:fillViewport="false">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/tl_datelist">
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
